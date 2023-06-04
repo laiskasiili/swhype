@@ -20,13 +20,13 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
+				// Enable typescript plugin for sveltekit extension
+				"svelte.enable-ts-plugin": true
 				// In case an extension does not install within devcontainer try uncommenting
 				// below, following: https://github.com/microsoft/vscode/issues/173327
 				// "extensions.verifySignature": false
-			}, 
-			"extensions": [
-				"svelte.svelte-vscode"
-			]
+			},
+			"extensions": ["svelte.svelte-vscode"]
 		}
 	}
 
