@@ -10,6 +10,13 @@
 		"sourceMap": true,
 		"strict": true,
 		"strictNullChecks": true,
+		"allowUnreachableCode": false,
+		"exactOptionalPropertyTypes": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noFallthroughCasesInSwitch": true,
 		"noUncheckedIndexedAccess": true
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
