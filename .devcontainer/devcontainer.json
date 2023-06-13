@@ -3,9 +3,7 @@
 {
 	"name": "Node Devcontainer",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
+	"image": "node:20-bullseye",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -14,7 +12,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	"postCreateCommand": "npm install && npx playwright install --with-deps",
 
 	// Configure tool-specific properties.
 	"customizations": {
@@ -26,7 +24,11 @@
 				// below, following: https://github.com/microsoft/vscode/issues/173327
 				// "extensions.verifySignature": false
 			},
-			"extensions": ["svelte.svelte-vscode"]
+			"extensions": [
+				"svelte.svelte-vscode", // SvelteKit language server
+				"eighthundreds.vscode-drawio", // drawio support for diagrams
+				"github.copilot" // Github Copilot code completion
+			]
 		}
 	}
 
