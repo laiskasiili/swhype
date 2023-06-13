@@ -14,14 +14,14 @@ const config = {
 		adapter: adapter(),
 		// Set content security policy to prevent xss:
 		// https://kit.svelte.dev/docs/configuration
-		csp: {
-            directives: {
-                'script-src': ['self']
-            },
-            reportOnly: {
-                'script-src': ['self']
-            }
-        }
+		// csp: {
+        //     directives: {
+        //         'script-src': ['self']
+        //     },
+        //     reportOnly: {
+        //         'script-src': ['self']
+        //     }
+        // }
 	}
 };
 
